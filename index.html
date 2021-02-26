@@ -8,28 +8,61 @@
     <link rel="stylesheet" href="Game1.css" />
   </head>
   <body>
+
+
       <div class="header">
       <p>Anand Dev</p>
     </div>
+
+
 <div class="main_screen"id="main_screen">
     <div class="main_screen_body">
         <p class="p1">Welcome Gamer!</p>
         <p class="p2"><br>This game is about<br>Guess the random number</p>
+        <p class="p3">?</p>
     </div>
     <div class="user_enter_menu">
-        <form action="" method="POST">
-        <input class="username" id="user_name" type="text" placeholder="Username" name="User_id" required maxlength="20">
-        <br><button type="submit" class="start_game" onclick="play_game()">PLAY</button>
-        </form>
+        <input class="user_name" id="user_name" type="text" placeholder="Username" name="User_id" maxlength="20" required>
+        <br>
+        <button type="submit" class="start_game" onclick="play_game()">PLAY</button>
     </div>
 </div>
 
 
-<div class="game" id="game">
-
+<div class="game11" id="game11">
+  <p class="p11">Rules:</p>
+  <p class="p22">
+    Guess any number between&emsp;  
+    "0 - 10"<br><br><br>
+    You have maximum of 
+    "three" tries.<br><br><br>
+    If your number matches the
+     computer's number then you
+     "win" else you "lose".    
+  </p>
+  <div class="buttons">
+  <p class="back_button" id="back_button" onclick="rules_page()">&#171;</p>
+  <p class="back_button" id="back_button" onclick="game_page()">&#187;</p>
+  </div>
 </div>
 
+<div class="game22" id="game22">
+  <p class="p111">Welcome</p>
+  <p class="p222" id="p222"></p>
+  <p class="p333">Enter any number between 0 to 10</p>
+  <p class="try_again" id="try_again">Try Again</p>
+  <input class="user_number" id="user_number" type="number"
+   min="0" max="10" name="number" placeholder="Number" 
+   required>
+   <br><button class="guess" id="guess" onclick="game_backend()">GUESS</button>
+   <div class="buttons1">
+  <p class="back_button" id="back_button" onclick="rules_page()">&#171;</p>
+  </div>
+</div>
 
+<div class="end_screen">
+
+</div>
 <script src="Game1.js" async></script>
   </body>
 </html>
