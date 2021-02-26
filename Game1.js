@@ -28,7 +28,7 @@ function game_page(){
     document.getElementById("p222").innerHTML = x;
 }
 var num;
-var flag;
+var flag=0;
 
 
 
