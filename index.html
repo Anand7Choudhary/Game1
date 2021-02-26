@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="Game1.css" />
   </head>
   <body>
-    <div class="header">
+      <div class="header">
       <p>Anand Dev</p>
     </div>
+<div class="main_screen"id="main_screen">
     <div class="main_screen_body">
         <p class="p1">Welcome Gamer!</p>
         <p class="p2"><br>This game is about<br>Guess the random number</p>
@@ -18,8 +19,17 @@
     <div class="user_enter_menu">
         <form action="" method="POST">
         <input class="username" id="user_name" type="text" placeholder="Username" name="User_id" required maxlength="20">
-        <br><button class="start_game">PLAY</button>
+        <br><button type="submit" class="start_game" onclick="play_game()">PLAY</button>
         </form>
     </div>
+</div>
+
+
+<div class="game" id="game">
+
+</div>
+
+
+<script src="Game1.js" async></script>
   </body>
 </html>

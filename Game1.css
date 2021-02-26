@@ -7,6 +7,12 @@
 body {
   background-color: rgb(79, 79, 209);
 }
+.main_screen_body{
+    display: block;
+}
+.game{
+    display: none;
+}
 .header {
   background-color: rgb(0, 0, 0);
   display: flex;
