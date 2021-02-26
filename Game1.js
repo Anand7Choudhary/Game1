@@ -32,37 +32,9 @@ var flag;
 
 
 
-function check(var user_value1,var comp_value1){
+// function check(var user_value1,var comp_value1){
 
-}
-
-function game_backend(){
-    var count=0;
-    var message=document.getElementById("try_again");
-    var submit_button=document.getElementById("guess");
-    var box_colour=document.getElementById("user_number");
-    var comp_value = Math.floor(Math.random() * 11);
-    num=comp_value;
-    var user_value = document.getElementById("user_number").value;
-    while(count<3 && flag==0)
-    {         count++;
-        submit_button.onclick="check(user_value,comp_value)";
-    }
-    if(flag==1)
-    {
-        submit_button.innerHTML = "GUESS";
-        box_colour.style.backgroundColor = "white";
-        message.style.visibility = "hidden";
-    }
-    else{
-        submit_button.innerHTML = "GUESS";
-        box_colour.style.backgroundColor = "white";
-        message.style.visibility = "hidden";
-    }
-}
-
-
-
+// }
 
 // function game_backend(){
 //     var count=0;
@@ -73,18 +45,8 @@ function game_backend(){
 //     num=comp_value;
 //     var user_value = document.getElementById("user_number").value;
 //     while(count<3 && flag==0)
-//     {
-//         if(user_value==comp_value){
-//             box_colour.style.backgroundColor="green";
-//             flag=1;
-//             break;
-//         }
-//         else{
-//             box_colour.style.backgroundColor = "red";
-//             submit_button.innerHTML="AGAIN";
-//             message.style.visibility="visible";
-//         }
-//         submit_button.onclick.count++;
+//     {         count++;
+//         submit_button.onclick="check(user_value,comp_value)";
 //     }
 //     if(flag==1)
 //     {
@@ -98,3 +60,41 @@ function game_backend(){
 //         message.style.visibility = "hidden";
 //     }
 // }
+
+
+
+
+function game_backend(){
+    var count=0;
+    var message=document.getElementById("try_again");
+    var submit_button=document.getElementById("guess");
+    var box_colour=document.getElementById("user_number");
+    var comp_value = Math.floor(Math.random() * 11);
+    num=comp_value;
+    var user_value = document.getElementById("user_number").value;
+    while(count<3 && flag==0)
+    {
+        if(user_value==comp_value){
+            box_colour.style.backgroundColor="green";
+            flag=1;
+            break;
+        }
+        else{
+            box_colour.style.backgroundColor = "red";
+            submit_button.innerHTML="AGAIN";
+            message.style.visibility="visible";
+        }
+        submit_button.onclick.count++;
+    }
+    if(flag==1)
+    {
+        submit_button.innerHTML = "GUESS";
+        box_colour.style.backgroundColor = "white";
+        message.style.visibility = "hidden";
+    }
+    else{
+        submit_button.innerHTML = "GUESS";
+        box_colour.style.backgroundColor = "white";
+        message.style.visibility = "hidden";
+    }
+}
